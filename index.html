@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        .container {
+            width: 350px;
+            height: 350px;
+            background: #ddd;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            position: relative;
+        }
+
+
+
+        #btn {
+
+            width: 100%;
+            margin-top: 200px;
+            font-size: 16px;
+            padding: 2px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: auto;
+        }
+
+        #userIn {
+            width: 98%;
+            margin: 8px 0;
+            font-size: 16px;
+            padding: 2px;
+        }
+
+        #userPass {
+            width: 98%;
+            margin: 8px 0;
+            font-size: 16px;
+            padding: 2px;
+        }
+
+        #invalidName {
+            position: absolute;
+            top: 40px;
+            right: -100px;
+            background: black;
+            padding: 0 10px;
+            border-radius: 5px;
+            color: white;
+            display: none;
+            transition: 0.3s;
+        }
+
+        #invalidePass {
+            position: absolute;
+            top: 82px;
+            right: -100px;
+            background: black;
+            padding: 0 10px;
+            border-radius: 5px;
+            color: white;
+            display: none;
+            transition: 0.3s;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: 82px;
+            right: -100px;
+            background: black;
+            padding: 0 10px;
+            border-radius: 5px;
+            color: white;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>✌বাপের হোটেলে ডোকার জায়গা✌</h3>
+        <input id="userIn" placeholder="তোর নাম বল 🤨" type="text">
+        <span id='invalidName'>তুই আমার পোলা না 🤷‍♂️</span>
+        <input id="userPass" placeholder="তোর পাসওয়াড দে 😏" type="password">
+        <span id='invalidePass'>তোর পাসওয়াড ভুল 🤦‍♀️</span></input>
+
+        <button id="btn">ডোক</button>
+
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
